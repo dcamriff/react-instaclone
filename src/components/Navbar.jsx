@@ -53,10 +53,10 @@ width: 25%;
 display: flex;
 justify-content: space-around;
 `
-
-/* const FaCompass = styled.div`
-
-` */
+const Icon = IconsContainer.extend`
+height: 28;
+width: 28;
+`
 
 
 class Navbar extends Component {
@@ -69,9 +69,15 @@ class Navbar extends Component {
           <FaSearch/><input type="text" placeholder="Search"/>
         </SearchContainer>
         <IconsContainer>
+        <Icon>
           <FaCompass/>
+          </Icon>
+          <Icon>
           <FaHeartO/>
+          </Icon>
+          <Icon>
           <FaUser/>
+          </Icon>
         </IconsContainer>
       </Nav>
     )
