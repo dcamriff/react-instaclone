@@ -54,9 +54,14 @@ display: flex;
 justify-content: space-around;
 `
 const Icon = IconsContainer.extend`
-size: 28px;
+svg{
+  fill: currentColor;
+  height: 28;
+  width: 28;
+  viewBox: 0 0 40 40;
+  vertical-align: middle;
+}
 `
-
 
 class Navbar extends Component {
   render() {
