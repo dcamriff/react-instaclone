@@ -54,8 +54,7 @@ display: flex;
 justify-content: space-around;
 `
 const Icon = IconsContainer.extend`
-height: 28;
-width: 28;
+size: 28px;
 `
 
 
@@ -64,19 +63,19 @@ class Navbar extends Component {
     return (
       <Nav>
         <p><FaInstagram/>
-          | Instaclone</p>
+          | <strong>Instaclone</strong></p>
         <SearchContainer>
           <FaSearch/><input type="text" placeholder="Search"/>
         </SearchContainer>
         <IconsContainer>
         <Icon>
-          <FaCompass/>
+          <FaCompass size={28}/>
           </Icon>
           <Icon>
-          <FaHeartO/>
+          <FaHeartO size={28}/>
           </Icon>
           <Icon>
-          <FaUser/>
+          <FaUser size={28}/>
           </Icon>
         </IconsContainer>
       </Nav>
